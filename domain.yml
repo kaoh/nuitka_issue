@@ -1,0 +1,24 @@
+intents:
+ - hello_person:
+    use_entities:
+      PERSON
+ 
+entities:
+ - PERSON
+ 
+slots:
+  PERSON:
+    type: text
+ 
+actions:
+ - utter_please_rephrase
+ 
+responses:
+  utter_default:
+  - text: "Das habe ich nicht verstanden. Kannst Du das anders formulieren.\n"
+  utter_please_rephrase:
+  - text: "Das habe ich nicht verstanden. Kannst Du das anders formulieren.\n"
+  utter_out_of_scope:
+  - text: "Das habe ich nicht verstanden oder kann ich nicht.\n"
+
+version: '2.0'

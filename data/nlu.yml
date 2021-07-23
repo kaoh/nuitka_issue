@@ -1,0 +1,15 @@
+nlu:
+- intent: hello_person
+  examples: |
+    -  Hallo [Thomas]{"entity": "PERSON"}
+    -  Hallo [Rolf]{"entity": "PERSON"}
+
+- intent: out_of_scope
+  examples: |
+    - Hä?
+    - Huhu
+    - Was?
+    - Unbedeutenter Satz
+    - Etwas anderes
+
+
