@@ -27,5 +27,5 @@ python -m nuitka --follow-imports --plugin-enable=tensorflow --plugin-enable=pyl
 cp rasa.bin /tmp
 cp -r models /tmp
 cd /tmp
-./rasa.bin run -m ../models
+./rasa.bin run -m models
 ~~~
